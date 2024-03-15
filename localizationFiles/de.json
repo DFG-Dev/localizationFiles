@@ -1,0 +1,14 @@
+{
+  "author": "Marco1223",
+  "locale": "de",
+  "values": {
+    "exampleCommand": [{
+      "description": "Ein Beispiel Befehl",
+      "message": "Hallo Welt!",
+      "options": {
+        "option1": "Option 1",
+        "option2": "Option 2"
+      }
+    }]
+  }
+}

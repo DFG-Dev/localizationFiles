@@ -2,7 +2,7 @@
   "author": "Marco1223",
   "locale": "localeCode",
   "values": {
-    "exampleCommand": [{
+    "exampleCommand": {
       "name": "exampleCommand",
       "description": "Example description for the command",
       "options": {

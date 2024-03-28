@@ -2,13 +2,21 @@
   "author": "Marco1223",
   "locale": "de",
   "values": {
-    "exampleCommand": [{
+    "exampleCommand": {
       "description": "Ein Beispiel Befehl",
       "message": "Hallo Welt!",
       "options": {
         "option1": "Option 1",
         "option2": "Option 2"
+      },
+      "embed": {
+        "title": "Example title",
+        "description": "Example description for the embed",
+        "fields": {
+          "field1": {"key": "Field 1", "value": "Value 1"},
+          "field2": {"key": "Field 2", "value": "Value 2"}
+        }
       }
-    }]
+    }
   }
 }

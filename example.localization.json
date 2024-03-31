@@ -6,15 +6,28 @@
       "name": "exampleCommand",
       "description": "Example description for the command",
       "options": {
-        "option1": "Option 1",
-        "option2": "Option 2"
+        "option1": {
+          "description": "Example description for the option"
+        },
+        "option2": {
+          "description": "Example description for the option"
+        },
+        "choices": {
+          "choice1": {
+            "description": "Example description for the choice"
+          }
+        }
       },
       "embed": {
-        "title": "Example title",
-        "description": "Example description for the embed",
-        "fields": {
-          "field1": {"key": "Field 1", "value": "Value 1"},
-          "field2": {"key": "Field 2", "value": "Value 2"}
+        "errors": {
+          "error1": {
+            "title": "Example title for the error",
+            "description": "Example description for the error"
+          }
+        },
+        "success": {
+          "title": "Example title for the success",
+          "description": "Example description for the success"
         }
       }
     }

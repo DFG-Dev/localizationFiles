@@ -1,0 +1,39 @@
+{
+  "author": "Marco1223",
+  "locale": "de",
+  "name": "Deutsch",
+  "values": {
+    "langCommand": {
+      "description": "Wechsel die Sprache des Servers für den Bot.",
+      "options": {
+        "option1": {
+          "description": "Wähle die Sprache aus, die du für den Bot verwenden möchtest."
+        },
+        "choices": {
+          "choice1": {
+            "description": "Deutsch"
+          },
+          "choice2": {
+            "description": "Englisch (US)"
+          }
+        }
+      },
+      "embed": {
+        "errors": {
+          "noPerms": {
+            "title": "FEHLER",
+            "description": "Du hast nicht die Berechtigung, die Sprache des Bots zu ändern."
+          },
+          "invalidLang": {
+            "title": "FEHLER",
+            "description": "Die Sprache, die du ausgewählt hast, ist ungültig."
+          }
+        },
+        "success": {
+          "title": "SPRACHE",
+          "description": "Du hast die Sprache des Bots auf {locale} erfolgreich geändert."
+        }
+      }
+    }
+  }
+}

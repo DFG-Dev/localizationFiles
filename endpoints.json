@@ -1,5 +1,6 @@
 {
   "endpoints": [
-    {"name":  "German", "locale": "de", "url": "https://raw.githubusercontent.com/DFG-Dev/localizationFiles/main/localizationFiles/de.json"}
+    {"name":  "German", "locale": "de", "url": "https://raw.githubusercontent.com/DFG-Dev/localizationFiles/main/localizationFiles/de.json"},
+    {"name":  "English (US)", "locale": "en-US", "url": "https://raw.githubusercontent.com/DFG-Dev/localizationFiles/main/localizationFiles/en-US.json"}
   ]
 }

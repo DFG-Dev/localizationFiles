@@ -1,6 +1,7 @@
 {
   "author": "Marco1223",
   "locale": "localeCode",
+  "name": "exampleLandName",
   "values": {
     "exampleCommand": {
       "name": "exampleCommand",

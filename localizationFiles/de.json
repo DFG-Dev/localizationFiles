@@ -1,6 +1,7 @@
 {
   "author": "Marco1223",
   "locale": "de",
+  "name": "Deutsch",
   "values": {
     "langCommand": {
       "description": "Wechsel die Sprache des Servers für den Bot.",

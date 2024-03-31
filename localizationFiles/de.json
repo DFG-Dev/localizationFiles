@@ -2,19 +2,39 @@
   "author": "Marco1223",
   "locale": "de",
   "values": {
-    "exampleCommand": {
-      "description": "Ein Beispiel Befehl",
-      "message": "Hallo Welt!",
+    "langCommand": {
+      "description": "Wechsel die Sprache des Servers für den Bot.",
       "options": {
-        "option1": "Option 1",
-        "option2": "Option 2"
+        "option1": {
+          "description": "Wähle die Sprache aus, die du für den Bot verwenden möchtest."
+        },
+        "choices": {
+          "choice1": {
+            "description": "Deutsch"
+          },
+          "choice2": {
+            "description": "Englisch (US)"
+          }
+        }
       },
       "embed": {
-        "title": "Example title",
-        "description": "Example description for the embed",
-        "fields": {
-          "field1": {"key": "Field 1", "value": "Value 1"},
-          "field2": {"key": "Field 2", "value": "Value 2"}
+        "errors": {
+          "noPerms": {
+            "title": "FEHLER",
+            "description": "Du hast nicht die Berechtigung, die Sprache des Bots zu ändern."
+          },
+          "noArgs": {
+            "title": "FEHLER",
+            "description": "Du musst eine Sprache auswählen, die du für den Bot verwenden möchtest."
+          },
+          "invalidLang": {
+            "title": "FEHLER",
+            "description": "Die Sprache, die du ausgewählt hast, ist ungültig."
+          }
+        },
+        "success": {
+          "title": "SPRACHE",
+          "description": "Du hast die Sprache des Bots auf {locale} erfolgreich geändert."
         }
       }
     }

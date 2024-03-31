@@ -24,10 +24,6 @@
             "title": "FEHLER",
             "description": "Du hast nicht die Berechtigung, die Sprache des Bots zu ändern."
           },
-          "noArgs": {
-            "title": "FEHLER",
-            "description": "Du musst eine Sprache auswählen, die du für den Bot verwenden möchtest."
-          },
           "invalidLang": {
             "title": "FEHLER",
             "description": "Die Sprache, die du ausgewählt hast, ist ungültig."

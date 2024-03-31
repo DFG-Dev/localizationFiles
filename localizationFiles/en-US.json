@@ -6,14 +6,14 @@
     "langCommand": {
       "description": "Wechsel die Sprache des Servers für den Bot.",
       "options": {
-        "option1": {
+        "language": {
           "description": "Wähle die Sprache aus, die du für den Bot verwenden möchtest."
         },
         "choices": {
-          "choice1": {
+          "german": {
             "description": "Deutsch"
           },
-          "choice2": {
+          "english_us": {
             "description": "Englisch (US)"
           }
         }

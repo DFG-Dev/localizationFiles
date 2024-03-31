@@ -11,10 +11,10 @@
         },
         "choices": {
           "german": {
-            "name": "Deutsch"
+            "name": "German"
           },
           "english_us": {
-            "name": "Englisch (US)"
+            "name": "English (US)"
           }
         }
       },

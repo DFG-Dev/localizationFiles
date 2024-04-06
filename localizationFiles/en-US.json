@@ -65,7 +65,7 @@
           "title": "MUSIK",
           "fields": {
             "title": "Titel",
-            "author": "Sänger",
+            "artist": "Sänger",
             "duration": "Dauer"
           }
         },

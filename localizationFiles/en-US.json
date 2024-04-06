@@ -63,6 +63,7 @@
         },
         "success": {
           "title": "MUSIK",
+          "description": "Deine Playlist mit {size} Songs wurde zur Warteschlange hinzugefügt, es wurde mit dem ersten Song begonnen.",
           "fields": {
             "title": "Titel",
             "artist": "Sänger",

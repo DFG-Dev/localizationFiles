@@ -62,7 +62,12 @@
           }
         },
         "success": {
-          "title": "MUSIK"
+          "title": "MUSIK",
+          "fields": {
+            "title": "Titel",
+            "author": "Sänger",
+            "duration": "Dauer"
+          }
         },
         "playlist": {
           "title": "PLAYLIST",

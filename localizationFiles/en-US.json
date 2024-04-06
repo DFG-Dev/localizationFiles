@@ -80,7 +80,7 @@
         },
         "queue": {
           "title": "WARTESCHLANGE",
-          "description": "Du hast {title} zur Warteschlange hinzugefügt."
+          "description": "Du hast {title} von {artist} zur Warteschlange hinzugefügt."
         }
       }
     }

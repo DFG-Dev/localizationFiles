@@ -70,6 +70,10 @@
             "duration": "Dauer"
           }
         },
+        "volumeChange": {
+          "title": "LAUTSTÄRKE",
+          "description": "Die Lautstärke wurde auf {volume}% geändert."
+        },
         "playlist": {
           "title": "PLAYLIST",
           "description": "Es wurden {size} aus der Playlist zur Warteschlange hinzugefügt."

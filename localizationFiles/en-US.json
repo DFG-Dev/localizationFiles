@@ -34,6 +34,45 @@
           "description": "Du hast die Sprache des Bots auf {locale} erfolgreich geändert."
         }
       }
+    },
+    "playCommand": {
+      "description": "Spiele Musik in einem Sprachkanal.",
+      "options": {
+        "query": {
+          "description": "Der Titel oder die URL des Songs, den du abspielen möchtest."
+        }
+      },
+      "embed": {
+        "errors": {
+          "noVoiceChannel": {
+            "title": "FEHLER",
+            "description": "Du musst in einem Sprachkanal sein, um Musik abzuspielen."
+          },
+          "noResults": {
+            "title": "FEHLER",
+            "description": "Es wurden keine Ergebnisse für deine Suche gefunden."
+          },
+          "queueFull": {
+            "title": "FEHLER",
+            "description": "Die Warteschlange ist voll."
+          },
+          "loadFailed": {
+            "title": "FEHLER",
+            "description": "Beim Laden des Songs ist ein Fehler aufgetreten."
+          }
+        },
+        "success": {
+          "title": "MUSIK"
+        },
+        "playlist": {
+          "title": "PLAYLIST",
+          "description": "Es wurden {size} aus der Playlist zur Warteschlange hinzugefügt."
+        },
+        "queue": {
+          "title": "WARTESCHLANGE",
+          "description": "Du hast {title} zur Warteschlange hinzugefügt."
+        }
+      }
     }
   }
 }

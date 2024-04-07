@@ -156,6 +156,33 @@
           "description": "Die Wiederholung wurde auf `{state}` geändert."
         }
       }
+    },
+    "shuffleCommand": {
+      "description": "Ändere die Reihenfolge der Warteschlange.",
+      "embed": {
+        "errors": {
+          "noVoiceChannel": {
+            "title": "FEHLER",
+            "description": "Der Bot ist nicht in einem Sprachkanal."
+          },
+          "notInSameChannel": {
+            "title": "FEHLER",
+            "description": "Du musst im selben Sprachkanal sein wie der Bot, um die Warteschlange zu mischen."
+          },
+          "noTrack": {
+            "title": "FEHLER",
+            "description": "Es wird gerade keine Musik abgespielt."
+          },
+          "noMoreSongs": {
+            "title": "FEHLER",
+            "description": "Die Warteschlange ist leer, weshalb es nichts zu mischen gibt."
+          }
+        },
+        "success": {
+          "title": "MUSIK",
+          "description": "Shuffle wurde auf `{state}` geändert."
+        }
+      }
     }
   }
 }

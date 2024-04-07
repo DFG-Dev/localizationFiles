@@ -1,7 +1,7 @@
 {
   "author": "Marco1223",
-  "locale": "de",
-  "name": "Deutsch",
+  "locale": "en-US",
+  "name": "English (US)",
   "values": {
     "langCommand": {
       "description": "Wechsel die Sprache des Servers für den Bot.",
@@ -31,7 +31,7 @@
         },
         "success": {
           "title": "SPRACHE",
-          "description": "Du hast die Sprache des Bots auf {locale} erfolgreich geändert."
+          "description": "Du hast die Sprache des Bots auf `{locale}` erfolgreich geändert."
         }
       }
     },
@@ -63,7 +63,7 @@
         },
         "success": {
           "title": "MUSIK",
-          "description": "Deine Playlist mit {size} Songs wurde zur Warteschlange hinzugefügt, es wurde mit dem ersten Song begonnen.",
+          "description": "Deine Playlist mit `{size}` Songs wurde zur Warteschlange hinzugefügt, es wurde mit dem ersten Song begonnen.",
           "fields": {
             "title": "Titel",
             "artist": "Sänger",
@@ -72,15 +72,15 @@
         },
         "volumeChange": {
           "title": "LAUTSTÄRKE",
-          "description": "Die Lautstärke wurde auf {volume}% geändert."
+          "description": "Die Lautstärke wurde auf `{volume}%` geändert."
         },
         "playlist": {
           "title": "PLAYLIST",
-          "description": "Es wurden {size} aus der Playlist zur Warteschlange hinzugefügt."
+          "description": "Es wurden `{size}` aus der Playlist zur Warteschlange hinzugefügt."
         },
         "queue": {
           "title": "WARTESCHLANGE",
-          "description": "Du hast {title} von {artist} zur Warteschlange hinzugefügt."
+          "description": "Du hast `{title}` von `{artist}` zur Warteschlange hinzugefügt."
         }
       }
     }

@@ -83,6 +83,79 @@
           "description": "Du hast `{title}` von `{artist}` zur Warteschlange hinzugefügt."
         }
       }
+    },
+    "stopCommand": {
+      "description": "Stoppt die Musik und leert die Warteschlange.",
+      "embed": {
+        "errors": {
+          "noVoiceChannel": {
+            "title": "FEHLER",
+            "description": "Der Bot ist nicht in einem Sprachkanal."
+          },
+          "notInSameChannel": {
+            "title": "FEHLER",
+            "description": "Du musst im selben Sprachkanal sein wie der Bot, um die Musik zu stoppen."
+          },
+          "noTrack": {
+            "title": "FEHLER",
+            "description": "Es wird gerade keine Musik abgespielt."
+          }
+        },
+        "success": {
+          "title": "MUSIK",
+          "description": "Die Warteschlange wurde geleert und die Musik wurde gestoppt."
+        }
+      }
+    },
+    "skipCommand": {
+      "description": "Überspringt den aktuellen Song.",
+      "embed": {
+        "errors": {
+          "noVoiceChannel": {
+            "title": "FEHLER",
+            "description": "Der Bot ist nicht in einem Sprachkanal."
+          },
+          "notInSameChannel": {
+            "title": "FEHLER",
+            "description": "Du musst im selben Sprachkanal sein wie der Bot, um den Song zu überspringen."
+          },
+          "noTrack": {
+            "title": "FEHLER",
+            "description": "Es wird gerade keine Musik abgespielt."
+          },
+          "noMoreSongs": {
+            "title": "FEHLER",
+            "description": "Es gibt keine weiteren Songs in der Warteschlange."
+          }
+        },
+        "success": {
+          "title": "MUSIK",
+          "description": "Der aktuelle Song wurde übersprungen."
+        }
+      }
+    },
+    "loopCommand": {
+      "description": "Schaltet die Wiederholung des aktuellen Songs ein oder aus.",
+      "embed": {
+        "errors": {
+          "noVoiceChannel": {
+            "title": "FEHLER",
+            "description": "Der Bot ist nicht in einem Sprachkanal."
+          },
+          "notInSameChannel": {
+            "title": "FEHLER",
+            "description": "Du musst im selben Sprachkanal sein wie der Bot, um die Wiederholung zu ändern."
+          },
+          "noTrack": {
+            "title": "FEHLER",
+            "description": "Es wird gerade keine Musik abgespielt."
+          }
+        },
+        "success": {
+          "title": "MUSIK",
+          "description": "Die Wiederholung wurde auf `{state}` geändert."
+        }
+      }
     }
   }
 }

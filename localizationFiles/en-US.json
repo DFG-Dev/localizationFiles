@@ -76,7 +76,7 @@
         },
         "playlist": {
           "title": "PLAYLIST",
-          "description": "Es wurden `{size}` aus der Playlist zur Warteschlange hinzugefügt."
+          "description": "Es wurden `{size}` Songs aus der Playlist `{name}` zur Warteschlange hinzugefügt."
         },
         "queue": {
           "title": "WARTESCHLANGE",

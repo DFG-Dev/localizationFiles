@@ -64,7 +64,7 @@
                 },
                 "successfulDelete": {
                   "title": "LOGS",
-                  "description": "The logs channel for the type `{type}` has been deleted."
+                  "description": "The logs channel for the type `{type}` has been removed."
                 },
                 "cancelledDelete": {
                   "title": "LOGS",
@@ -77,6 +77,58 @@
                 },
                 "cancel": {
                   "label": "No"
+                }
+              }
+            },
+            "remove": {
+              "description": "Remove a logs channel from the bot.",
+              "options": {
+                "type": {
+                  "description": "The type of logs that should be sent."
+                },
+                "choices": {
+                  "leave": {
+                    "name": "Leave"
+                  },
+                  "join": {
+                    "name": "Join"
+                  },
+                  "ban": {
+                    "name": "Ban"
+                  },
+                  "unban": {
+                    "name": "Unban"
+                  },
+                  "kick": {
+                    "name": "Kick"
+                  },
+                  "message": {
+                    "name": "Message"
+                  },
+                  "role": {
+                    "name": "Role Update"
+                  },
+                  "voice": {
+                    "name": "Voice State Update"
+                  },
+                  "channel": {
+                    "name": "Channel Update"
+                  },
+                  "warn": {
+                    "name": "Warn"
+                  }
+                }
+              },
+              "embed": {
+                "errors": {
+                  "notSet": {
+                    "title": "ERROR",
+                    "description": "The logs channel for the type `{type}` is not set. Use the `/setup logs add` to set it."
+                  }
+                },
+                "success": {
+                  "title": "LOGS",
+                  "description": "The logs channel for the type `{type}` has been removed"
                 }
               }
             }

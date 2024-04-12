@@ -3,6 +3,79 @@
   "locale": "en-US",
   "name": "English (US)",
   "values": {
+    "setupSubCommand": {
+      "description": "Setup Subcommand for the bot.",
+      "groups": {
+        "logsCommand": {
+          "description": "Setup the logs channel for the bot.",
+          "commands": {
+            "add": {
+              "description": "Add a logs channel to the bot.",
+              "options": {
+                "channel": {
+                  "description": "The channel where the logs should be sent."
+                },
+                "type": {
+                  "description": "The type of logs that should be sent."
+                },
+                "choices": {
+                  "leave": {
+                    "name": "Leave"
+                  },
+                  "join": {
+                    "name": "Join"
+                  },
+                  "ban": {
+                    "name": "Ban"
+                  },
+                  "unban": {
+                    "name": "Unban"
+                  },
+                  "kick": {
+                    "name": "Kick"
+                  },
+                  "message": {
+                    "name": "Message"
+                  },
+                  "role": {
+                    "name": "Role Update"
+                  },
+                  "voice": {
+                    "name": "Voice State Update"
+                  },
+                  "channel": {
+                    "name": "Channel Update"
+                  },
+                  "warn": {
+                    "name": "Warn"
+                  }
+                }
+              },
+              "embed": {
+                "errors": {
+                  "alreadySet": {
+                    "title": "ERROR",
+                    "description": "The logs channel for the type `{type}` is already set. Do you want to delete it?"
+                  }
+                },
+                "success": {
+                  "title": "LOGS",
+                  "description": "The logs channel for the type `{type}` has been set to {channel}."
+                }
+              },
+              "components": {
+                "confirm": {
+                  "label": "Yes"
+                },
+                "cancel": {
+                  "label": "No"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "langCommand": {
       "description": "Wechsel die Sprache des Servers für den Bot.",
       "options": {

@@ -61,6 +61,14 @@
                 "success": {
                   "title": "LOGS",
                   "description": "The logs channel for the type `{type}` has been set to {channel}."
+                },
+                "successfulDelete": {
+                  "title": "LOGS",
+                  "description": "The logs channel for the type has been deleted."
+                },
+                "cancelledDelete": {
+                  "title": "LOGS",
+                  "description": "The deletion of the logs channel has been cancelled."
                 }
               },
               "components": {

@@ -64,7 +64,7 @@
                 },
                 "successfulDelete": {
                   "title": "LOGS",
-                  "description": "The logs channel for the type has been deleted."
+                  "description": "The logs channel for the type `{type}` has been deleted."
                 },
                 "cancelledDelete": {
                   "title": "LOGS",

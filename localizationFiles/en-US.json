@@ -335,7 +335,8 @@
           "channel": "Kanal",
           "author": "Autor",
           "content": "Inhalt",
-          "deletedBy": "Gelöscht von"
+          "deletedBy": "Gelöscht von",
+          "attachments": "Anhänge"
         }
       }
     }

@@ -327,6 +327,16 @@
           "joinedAt": "Beigetreten am",
           "member": "Mitglieder"
         }
+      },
+      "messageDelete": {
+        "title": "NACHRICHT GELÖSCHT",
+        "fields": {
+          "id": "Nachrichten ID",
+          "channel": "Kanal",
+          "author": "Autor",
+          "content": "Inhalt",
+          "deletedBy": "Gelöscht von"
+        }
       }
     }
   }

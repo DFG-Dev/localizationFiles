@@ -338,6 +338,16 @@
           "deletedBy": "Gelöscht von",
           "attachments": "Anhänge"
         }
+      },
+      "messageUpdate": {
+        "title": "NACHRICHT AKTUALISIERT",
+        "fields": {
+          "id": "Nachrichten ID",
+          "channel": "Kanal",
+          "author": "Autor",
+          "oldContent": "Alter Inhalt",
+          "newContent": "Neuer Inhalt"
+        }
       }
     }
   }

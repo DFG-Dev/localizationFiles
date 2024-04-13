@@ -316,6 +316,18 @@
           "description": "Shuffle wurde auf `{state}` geändert."
         }
       }
+    },
+    "logs": {
+      "join-leave": {
+        "title": "BEITRITT",
+        "fields": {
+          "id": "ID",
+          "name": "Name",
+          "createdAt": "Erstellt am",
+          "joinedAt": "Beigetreten am",
+          "member": "Mitglieder"
+        }
+      }
     }
   }
 }

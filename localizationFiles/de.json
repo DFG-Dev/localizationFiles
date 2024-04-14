@@ -192,6 +192,10 @@
           "loadFailed": {
             "title": "FEHLER",
             "description": "Beim Laden des Songs ist ein Fehler aufgetreten."
+          },
+          "noNodeConnected":{
+            "title": "FEHLER",
+            "description": "Der Bot startet gerade, bitte versuche es später erneut."
           }
         },
         "success": {

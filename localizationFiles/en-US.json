@@ -137,10 +137,10 @@
       }
     },
     "langCommand": {
-      "description": "Wechsel die Sprache des Servers für den Bot.",
+      "description": "Change the server's language for the bot.",
       "options": {
         "language": {
-          "description": "Wähle die Sprache aus, die du für den Bot verwenden möchtest."
+          "description": "Choose the language you want to use for the bot."
         },
         "choices": {
           "german": {
@@ -154,199 +154,199 @@
       "embed": {
         "errors": {
           "noPerms": {
-            "title": "FEHLER",
-            "description": "Du hast nicht die Berechtigung, die Sprache des Bots zu ändern."
+            "title": "ERROR",
+            "description": "You don't have permission to change the bot's language."
           },
           "invalidLang": {
-            "title": "FEHLER",
-            "description": "Die Sprache, die du ausgewählt hast, ist ungültig."
+            "title": "ERROR",
+            "description": "The language you selected is invalid."
           }
         },
         "success": {
-          "title": "SPRACHE",
-          "description": "Du hast die Sprache des Bots auf `{locale}` erfolgreich geändert."
+          "title": "LANGUAGE",
+          "description": "You have successfully changed the bot's language to `{locale}`."
         }
       }
     },
     "playCommand": {
-      "description": "Spiele Musik in einem Sprachkanal.",
+      "description": "Play music in a voice channel.",
       "options": {
         "query": {
-          "description": "Der Titel oder die URL des Songs, den du abspielen möchtest."
+          "description": "The title or URL of the song you want to play."
         }
       },
       "embed": {
         "errors": {
           "noVoiceChannel": {
-            "title": "FEHLER",
-            "description": "Du musst in einem Sprachkanal sein, um Musik abzuspielen."
+            "title": "ERROR",
+            "description": "You need to be in a voice channel to play music."
           },
           "noResults": {
-            "title": "FEHLER",
-            "description": "Es wurden keine Ergebnisse für deine Suche gefunden."
+            "title": "ERROR",
+            "description": "No results found for your search."
           },
           "queueFull": {
-            "title": "FEHLER",
-            "description": "Die Warteschlange ist voll."
+            "title": "ERROR",
+            "description": "The queue is full."
           },
           "loadFailed": {
-            "title": "FEHLER",
-            "description": "Beim Laden des Songs ist ein Fehler aufgetreten."
+            "title": "ERROR",
+            "description": "An error occurred while loading the song."
           }
         },
         "success": {
-          "title": "MUSIK",
-          "description": "Deine Playlist mit `{size}` Songs wurde zur Warteschlange hinzugefügt, es wurde mit dem ersten Song begonnen.",
+          "title": "MUSIC",
+          "description": "Your playlist with `{size}` songs has been added to the queue, starting with the first song.",
           "fields": {
-            "title": "Titel",
-            "artist": "Sänger",
-            "duration": "Dauer"
+            "title": "Title",
+            "artist": "Artist",
+            "duration": "Duration"
           }
         },
         "volumeChange": {
-          "title": "LAUTSTÄRKE",
-          "description": "Die Lautstärke wurde auf `{volume}%` geändert."
+          "title": "VOLUME",
+          "description": "Volume has been changed to `{volume}%`."
         },
         "playlist": {
           "title": "PLAYLIST",
-          "description": "Es wurden `{size}` Songs aus der Playlist `{name}` zur Warteschlange hinzugefügt."
+          "description": "Added `{size}` songs from playlist `{name}` to the queue."
         },
         "queue": {
-          "title": "WARTESCHLANGE",
-          "description": "Du hast `{title}` von `{artist}` zur Warteschlange hinzugefügt."
+          "title": "QUEUE",
+          "description": "You added `{title}` by `{artist}` to the queue."
         }
       }
     },
     "stopCommand": {
-      "description": "Stoppt die Musik und leert die Warteschlange.",
+      "description": "Stop the music and clear the queue.",
       "embed": {
         "errors": {
           "noVoiceChannel": {
-            "title": "FEHLER",
-            "description": "Der Bot ist nicht in einem Sprachkanal."
+            "title": "ERROR",
+            "description": "The bot is not in a voice channel."
           },
           "notInSameChannel": {
-            "title": "FEHLER",
-            "description": "Du musst im selben Sprachkanal sein wie der Bot, um die Musik zu stoppen."
+            "title": "ERROR",
+            "description": "You need to be in the same voice channel as the bot to stop the music."
           },
           "noTrack": {
-            "title": "FEHLER",
-            "description": "Es wird gerade keine Musik abgespielt."
+            "title": "ERROR",
+            "description": "No music is currently playing."
           }
         },
         "success": {
-          "title": "MUSIK",
-          "description": "Die Warteschlange wurde geleert und die Musik wurde gestoppt."
+          "title": "MUSIC",
+          "description": "The queue has been cleared and the music has been stopped."
         }
       }
     },
     "skipCommand": {
-      "description": "Überspringt den aktuellen Song.",
+      "description": "Skip the current song.",
       "embed": {
         "errors": {
           "noVoiceChannel": {
-            "title": "FEHLER",
-            "description": "Der Bot ist nicht in einem Sprachkanal."
+            "title": "ERROR",
+            "description": "The bot is not in a voice channel."
           },
           "notInSameChannel": {
-            "title": "FEHLER",
-            "description": "Du musst im selben Sprachkanal sein wie der Bot, um den Song zu überspringen."
+            "title": "ERROR",
+            "description": "You must be in the same voice channel as the bot to skip the song."
           },
           "noTrack": {
-            "title": "FEHLER",
-            "description": "Es wird gerade keine Musik abgespielt."
+            "title": "ERROR",
+            "description": "No music is currently playing."
           },
           "noMoreSongs": {
-            "title": "FEHLER",
-            "description": "Es gibt keine weiteren Songs in der Warteschlange."
+            "title": "ERROR",
+            "description": "There are no more songs in the queue."
           }
         },
         "success": {
-          "title": "MUSIK",
-          "description": "Der aktuelle Song wurde übersprungen."
+          "title": "MUSIC",
+          "description": "The current song has been skipped."
         }
       }
     },
     "loopCommand": {
-      "description": "Schaltet die Wiederholung des aktuellen Songs ein oder aus.",
+      "description": "Toggle looping of the current song.",
       "embed": {
         "errors": {
           "noVoiceChannel": {
-            "title": "FEHLER",
-            "description": "Der Bot ist nicht in einem Sprachkanal."
+            "title": "ERROR",
+            "description": "The bot is not in a voice channel."
           },
           "notInSameChannel": {
-            "title": "FEHLER",
-            "description": "Du musst im selben Sprachkanal sein wie der Bot, um die Wiederholung zu ändern."
+            "title": "ERROR",
+            "description": "You must be in the same voice channel as the bot to change the loop."
           },
           "noTrack": {
-            "title": "FEHLER",
-            "description": "Es wird gerade keine Musik abgespielt."
+            "title": "ERROR",
+            "description": "No music is currently playing."
           }
         },
         "success": {
-          "title": "MUSIK",
-          "description": "Die Wiederholung wurde auf `{state}` geändert."
+          "title": "MUSIC",
+          "description": "Loop has been set to `{state}`."
         }
       }
     },
     "shuffleCommand": {
-      "description": "Ändere die Reihenfolge der Warteschlange.",
+      "description": "Change the order of the queue.",
       "embed": {
         "errors": {
           "noVoiceChannel": {
-            "title": "FEHLER",
-            "description": "Der Bot ist nicht in einem Sprachkanal."
+            "title": "ERROR",
+            "description": "The bot is not in a voice channel."
           },
           "notInSameChannel": {
-            "title": "FEHLER",
-            "description": "Du musst im selben Sprachkanal sein wie der Bot, um die Warteschlange zu mischen."
+            "title": "ERROR",
+            "description": "You must be in the same voice channel as the bot to shuffle the queue."
           },
           "noTrack": {
-            "title": "FEHLER",
-            "description": "Es wird gerade keine Musik abgespielt."
+            "title": "ERROR",
+            "description": "No music is currently playing."
           },
           "noMoreSongs": {
-            "title": "FEHLER",
-            "description": "Die Warteschlange ist leer, weshalb es nichts zu mischen gibt."
+            "title": "ERROR",
+            "description": "The queue is empty, there's nothing to shuffle."
           }
         },
         "success": {
-          "title": "MUSIK",
-          "description": "Shuffle wurde auf `{state}` geändert."
+          "title": "MUSIC",
+          "description": "Shuffle has been set to `{state}`."
         }
       }
     },
     "logs": {
       "join-leave": {
-        "title": "BEITRITT",
+        "title": "JOIN",
         "fields": {
           "id": "ID",
           "name": "Name",
-          "createdAt": "Erstellt am",
-          "joinedAt": "Beigetreten am",
-          "member": "Mitglieder"
+          "createdAt": "Created At",
+          "joinedAt": "Joined At",
+          "member": "Members"
         }
       },
       "messageDelete": {
-        "title": "NACHRICHT GELÖSCHT",
+        "title": "MESSAGE DELETED",
         "fields": {
-          "id": "Nachrichten ID",
-          "channel": "Kanal",
-          "author": "Autor",
-          "content": "Inhalt",
-          "deletedBy": "Gelöscht von",
-          "attachments": "Anhänge"
+          "id": "Message ID",
+          "channel": "Channel",
+          "author": "Author",
+          "content": "Content",
+          "deletedBy": "Deleted By",
+          "attachments": "Attachments"
         }
       },
       "messageUpdate": {
-        "title": "NACHRICHT AKTUALISIERT",
+        "title": "MESSAGE UPDATED",
         "fields": {
-          "id": "Nachrichten ID",
-          "channel": "Kanal",
-          "author": "Autor",
-          "oldContent": "Alter Inhalt",
-          "newContent": "Neuer Inhalt"
+          "id": "Message ID",
+          "channel": "Channel",
+          "author": "Author",
+          "oldContent": "Old Content",
+          "newContent": "New Content"
         }
       }
     }

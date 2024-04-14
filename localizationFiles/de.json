@@ -3,6 +3,139 @@
   "locale": "de",
   "name": "Deutsch",
   "values": {
+    "setupSubCommand": {
+      "description": "Setup commands für den Bot.",
+      "groups": {
+        "logsCommand": {
+          "description": "Stelle Logchannels für den Bot ein.",
+          "commands": {
+            "add": {
+              "description": "Füge einen Logchannel für den Bot hinzu.",
+              "options": {
+                "channel": {
+                  "description": "Der Kanal, in dem die Logs gesendet werden sollen."
+                },
+                "type": {
+                  "description": "Der Typ der Logart, die du einrichten möchtest."
+                },
+                "choices": {
+                  "leave": {
+                    "name": "Leave"
+                  },
+                  "join": {
+                    "name": "Join"
+                  },
+                  "ban": {
+                    "name": "Ban"
+                  },
+                  "unban": {
+                    "name": "Unban"
+                  },
+                  "kick": {
+                    "name": "Kick"
+                  },
+                  "message": {
+                    "name": "Message"
+                  },
+                  "role": {
+                    "name": "Role Update"
+                  },
+                  "voice": {
+                    "name": "Voice State Update"
+                  },
+                  "channel": {
+                    "name": "Channel Update"
+                  },
+                  "warn": {
+                    "name": "Warn"
+                  }
+                }
+              },
+              "embed": {
+                "errors": {
+                  "alreadySet": {
+                    "title": "ERROR",
+                    "description": "Der Logchannel für den Type `{type}` ist bereits festgelegt. Verwenden Sie `/setup logs remove`, um ihn zu entfernen."
+                  }
+                },
+                "success": {
+                  "title": "LOGS",
+                  "description": "Der Logchannel für den Type `{type}` wurde erfolgreich hinzugefügt."
+                },
+                "successfulDelete": {
+                  "title": "LOGS",
+                  "description": "Der Logchannel für den Type `{type}` wurde erfolgreich gelöscht."
+                },
+                "cancelledDelete": {
+                  "title": "LOGS",
+                  "description": "Das Löschen des Logchannels für den Type `{type}` wurde abgebrochen."
+                }
+              },
+              "components": {
+                "confirm": {
+                  "label": "Yes"
+                },
+                "cancel": {
+                  "label": "No"
+                }
+              }
+            },
+            "remove": {
+              "description": "Entferne den Logchannel für den Bot.",
+              "options": {
+                "type": {
+                  "description": "Der Typ der Logart, den du entfernen möchtest."
+                },
+                "choices": {
+                  "leave": {
+                    "name": "Leave"
+                  },
+                  "join": {
+                    "name": "Join"
+                  },
+                  "ban": {
+                    "name": "Ban"
+                  },
+                  "unban": {
+                    "name": "Unban"
+                  },
+                  "kick": {
+                    "name": "Kick"
+                  },
+                  "message": {
+                    "name": "Message"
+                  },
+                  "role": {
+                    "name": "Role Update"
+                  },
+                  "voice": {
+                    "name": "Voice State Update"
+                  },
+                  "channel": {
+                    "name": "Channel Update"
+                  },
+                  "warn": {
+                    "name": "Warn"
+                  }
+                }
+              },
+              "embed": {
+                "errors": {
+                  "notSet": {
+                    "title": "ERROR",
+                    "description": "Der Logchannel für den Typ {type} ist nicht festgelegt. Verwenden Sie /setup logs add, um ihn einzurichten."
+                  }
+                },
+                "success": {
+                  "title": "LOGS",
+                  "description": "Der Logchannel für den Type `{type}` wurde entfernt."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "langCommand": {
       "description": "Wechsel die Sprache des Servers für den Bot.",
       "options": {
@@ -11,10 +144,10 @@
         },
         "choices": {
           "german": {
-            "name": "Deutsch"
+            "name": "German"
           },
           "english_us": {
-            "name": "Englisch (US)"
+            "name": "English (US)"
           }
         }
       },
@@ -31,7 +164,7 @@
         },
         "success": {
           "title": "SPRACHE",
-          "description": "Du hast die Sprache des Bots auf {locale} erfolgreich geändert."
+          "description": "Du hast die Sprache des Bots auf `{locale}` erfolgreich geändert."
         }
       }
     },
@@ -62,15 +195,158 @@
           }
         },
         "success": {
-          "title": "MUSIK"
+          "title": "MUSIK",
+          "description": "Deine Playlist mit `{size}` Songs wurde zur Warteschlange hinzugefügt, es wurde mit dem ersten Song begonnen.",
+          "fields": {
+            "title": "Titel",
+            "artist": "Sänger",
+            "duration": "Dauer"
+          }
+        },
+        "volumeChange": {
+          "title": "LAUTSTÄRKE",
+          "description": "Die Lautstärke wurde auf `{volume}%` geändert."
         },
         "playlist": {
           "title": "PLAYLIST",
-          "description": "Es wurden {size} aus der Playlist zur Warteschlange hinzugefügt."
+          "description": "Es wurden `{size}` Songs aus der Playlist `{name}` zur Warteschlange hinzugefügt."
         },
         "queue": {
           "title": "WARTESCHLANGE",
-          "description": "Du hast {title} zur Warteschlange hinzugefügt."
+          "description": "Du hast `{title}` von `{artist}` zur Warteschlange hinzugefügt."
+        }
+      }
+    },
+    "stopCommand": {
+      "description": "Stoppt die Musik und leert die Warteschlange.",
+      "embed": {
+        "errors": {
+          "noVoiceChannel": {
+            "title": "FEHLER",
+            "description": "Der Bot ist nicht in einem Sprachkanal."
+          },
+          "notInSameChannel": {
+            "title": "FEHLER",
+            "description": "Du musst im selben Sprachkanal sein wie der Bot, um die Musik zu stoppen."
+          },
+          "noTrack": {
+            "title": "FEHLER",
+            "description": "Es wird gerade keine Musik abgespielt."
+          }
+        },
+        "success": {
+          "title": "MUSIK",
+          "description": "Die Warteschlange wurde geleert und die Musik wurde gestoppt."
+        }
+      }
+    },
+    "skipCommand": {
+      "description": "Überspringt den aktuellen Song.",
+      "embed": {
+        "errors": {
+          "noVoiceChannel": {
+            "title": "FEHLER",
+            "description": "Der Bot ist nicht in einem Sprachkanal."
+          },
+          "notInSameChannel": {
+            "title": "FEHLER",
+            "description": "Du musst im selben Sprachkanal sein wie der Bot, um den Song zu überspringen."
+          },
+          "noTrack": {
+            "title": "FEHLER",
+            "description": "Es wird gerade keine Musik abgespielt."
+          },
+          "noMoreSongs": {
+            "title": "FEHLER",
+            "description": "Es gibt keine weiteren Songs in der Warteschlange."
+          }
+        },
+        "success": {
+          "title": "MUSIK",
+          "description": "Der aktuelle Song wurde übersprungen."
+        }
+      }
+    },
+    "loopCommand": {
+      "description": "Schaltet die Wiederholung des aktuellen Songs ein oder aus.",
+      "embed": {
+        "errors": {
+          "noVoiceChannel": {
+            "title": "FEHLER",
+            "description": "Der Bot ist nicht in einem Sprachkanal."
+          },
+          "notInSameChannel": {
+            "title": "FEHLER",
+            "description": "Du musst im selben Sprachkanal sein wie der Bot, um die Wiederholung zu ändern."
+          },
+          "noTrack": {
+            "title": "FEHLER",
+            "description": "Es wird gerade keine Musik abgespielt."
+          }
+        },
+        "success": {
+          "title": "MUSIK",
+          "description": "Die Wiederholung wurde auf `{state}` geändert."
+        }
+      }
+    },
+    "shuffleCommand": {
+      "description": "Ändere die Reihenfolge der Warteschlange.",
+      "embed": {
+        "errors": {
+          "noVoiceChannel": {
+            "title": "FEHLER",
+            "description": "Der Bot ist nicht in einem Sprachkanal."
+          },
+          "notInSameChannel": {
+            "title": "FEHLER",
+            "description": "Du musst im selben Sprachkanal sein wie der Bot, um die Warteschlange zu mischen."
+          },
+          "noTrack": {
+            "title": "FEHLER",
+            "description": "Es wird gerade keine Musik abgespielt."
+          },
+          "noMoreSongs": {
+            "title": "FEHLER",
+            "description": "Die Warteschlange ist leer, weshalb es nichts zu mischen gibt."
+          }
+        },
+        "success": {
+          "title": "MUSIK",
+          "description": "Shuffle wurde auf `{state}` geändert."
+        }
+      }
+    },
+    "logs": {
+      "join-leave": {
+        "title": "BEITRITT",
+        "fields": {
+          "id": "ID",
+          "name": "Name",
+          "createdAt": "Erstellt am",
+          "joinedAt": "Beigetreten am",
+          "member": "Mitglieder"
+        }
+      },
+      "messageDelete": {
+        "title": "NACHRICHT GELÖSCHT",
+        "fields": {
+          "id": "Nachrichten ID",
+          "channel": "Kanal",
+          "author": "Autor",
+          "content": "Inhalt",
+          "deletedBy": "Gelöscht von",
+          "attachments": "Anhänge"
+        }
+      },
+      "messageUpdate": {
+        "title": "NACHRICHT AKTUALISIERT",
+        "fields": {
+          "id": "Nachrichten ID",
+          "channel": "Kanal",
+          "author": "Autor",
+          "oldContent": "Alter Inhalt",
+          "newContent": "Neuer Inhalt"
         }
       }
     }

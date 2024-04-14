@@ -192,6 +192,10 @@
           "loadFailed": {
             "title": "ERROR",
             "description": "An error occurred while loading the song."
+          },
+          "noNodesConnected" : {
+            "title": "ERROR",
+            "description": "The bot is starting up, please try again in a few seconds."
           }
         },
         "success": {

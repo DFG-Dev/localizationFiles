@@ -168,6 +168,17 @@
         }
       }
     },
+    "pingCommand": {
+      "description": "Lass dir die Latenz des Bots anzeigen.",
+      "embed": {
+        "title": "🏓 Pong! (Shard {shardId})",
+        "description": "Pong!",
+        "fields": {
+          "ws": "Websocket",
+          "rest": "REST API"
+        }
+      }
+    },
     "playCommand": {
       "description": "Spiele Musik in einem Sprachkanal.",
       "options": {
@@ -309,10 +320,6 @@
           "noTrack": {
             "title": "FEHLER",
             "description": "Es wird gerade keine Musik abgespielt."
-          },
-          "noMoreSongs": {
-            "title": "FEHLER",
-            "description": "Die Warteschlange ist leer, weshalb es nichts zu mischen gibt."
           }
         },
         "success": {

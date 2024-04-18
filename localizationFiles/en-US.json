@@ -168,6 +168,17 @@
         }
       }
     },
+    "pingCommand": {
+      "description": "Check the bot's latency.",
+      "embed": {
+        "title": "🏓 Pong! (Shard {shardId})",
+        "description": "Pong!",
+        "fields": {
+          "ws": "Websocket",
+          "rest": "REST API"
+        }
+      }
+    },
     "playCommand": {
       "description": "Play music in a voice channel.",
       "options": {
@@ -309,10 +320,6 @@
           "noTrack": {
             "title": "ERROR",
             "description": "No music is currently playing."
-          },
-          "noMoreSongs": {
-            "title": "ERROR",
-            "description": "The queue is empty, there's nothing to shuffle."
           }
         },
         "success": {
